@@ -29,7 +29,7 @@ if choice == "1":
 
   time.sleep(0.5)
 
-  os.system('python $(pwd)/src/cloner/main.py')
+  os.system('python /src/cloner/main.py')
 
 elif choice == "2":
   print(Back.GREEN + "Démarage du selfbot..." + Style.RESET_ALL)
@@ -37,7 +37,7 @@ elif choice == "2":
 
   time.sleep(0.5)
 
-  os.system('python $(pwd)/src/cloner/main.py')
+  os.system('python /src/cloner/main.py')
 
 else:
   print(Back.RED + "Aucune option trouvée.")
