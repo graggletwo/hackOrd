@@ -33,7 +33,10 @@ if choice == "1":
 
 elif choice == "2":
   print(Back.GREEN + "Démarage du selfbot..." + Style.RESET_ALL)
-  os.system('clear')
+   if os == "Windows":
+      os.system('cls')
+   else:
+      os.system('clear')
 
   time.sleep(0.5)
 
