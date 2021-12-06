@@ -58,9 +58,14 @@ Serveur cloné avec succes !
 
     if exit_question == "1":
       print("Retour à l'accueil...")
-
-      os.system('clear')
-      os.system('python $(pwd)/main.py')
+        if os == "Windows":
+            os.system('cls')
+            os.system('python main.py')
+            
+        else:
+            os.system('clear')
+            os.system('python main.py')
+      
       
 
     client.close()
